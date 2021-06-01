@@ -1,0 +1,253 @@
+/* NavBar Styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #0D0D0D;
+}
+
+nav {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.logo {
+  font-family: 'Mr Dafoe', cursive;
+  display: inline-block;
+  color: white;
+  font-size: 37px;
+  padding-left: 163px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding-right: 126px;
+}
+
+.item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.item:hover a {
+  text-shadow: 0 0 20px #0099ff;
+}
+
+.item:hover::after a {
+  color: #0099ff;
+  filter: blur(15px);
+}
+
+/* About Section */
+
+.flex-container {
+  display: flex;
+  position: relative;
+  padding-left: 194px;
+  padding-top: 170px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.line {
+  height: 2px;
+  width: 290px;
+  background-color: white;
+}
+
+.example {
+  color: white;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child:first-child {
+  margin-right: 25px;
+}
+.icon-space {
+ margin-left: 25px;
+ transition: all .3s ease-in-out;
+}
+
+.linkedin:hover {
+  color: cyan;
+  transition: all .3s ease-in-out;
+}
+
+.github:hover {
+  color: rgb(128, 127, 127);
+  transition: all .3s ease-in-out;
+}
+
+.discord:hover {
+  color: rgb(87, 11, 228);
+}
+
+/* Start of Content Section */
+
+.content-section {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 220px;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+
+.intro {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5em;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.blue {
+  color: #1DB1E0;
+}
+
+.interest {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 35px;
+}
+
+/* Working on Image Section pretty fucking hard *FINISHED */
+
+.image-section {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-right: 220px;
+  bottom: 585px;
+  z-index: -1;
+}
+
+.img-edit {
+  width: auto;
+  height: 532px;
+}
+
+/* Button Mods */
+
+button:hover {
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.buttons {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  right: 30px;
+  width: 300px;
+}
+
+.buttons button {
+  padding: 15px 64px;
+  margin: 30px 25px 30px 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.space {
+  margin: 25px;
+  position: relative;
+  right: 27px;
+}
+
+#btn {
+  background: #070707;
+  border: 2px solid #070707;
+  color: #abb7b7;
+  width: 100%;
+}
+
+#btn:hover {
+  background: #abb7b7;
+  color: #fff;
+}
+
+#btn:active {
+  background: #070707;
+  border-color: #fff;
+}
+
+/* End of Button Mods */
+
+/* Start of Custom Scroll Bar */
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #2b2a2a;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: #abb7b7;
+}
+/* End of Custom Scroll Bar */
+
+/* End of Content Section */
+
+
+/* Beginning of Skill Section */
+
+.skill-header {
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.skill-paragraph {
+  padding-top: 32px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skill-section {
+  position: relative;
+  padding-top: 60px;
+  padding-left: 220px;
+  margin-bottom: 0px;
+}
+
+/* End of Skill Section */
